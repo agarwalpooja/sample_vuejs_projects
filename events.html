@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>VueJs tutorials
+        </title>
+        <link href="stylesheet.css" rel="stylesheet"/>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>    </head>
+    <body>
+        <div id="vue-app">
+            <h1>events</h1>
+            <button v-on:click="add(1)">add an year</button>
+            <button v-on:click="sub(1)">sub an year</button>
+            <button v-on:dbclick="add(10)">sub 10 year</button>
+            <button v-on:dbclick="sub(10)">sub 10 year</button>
+
+            <p>my age is {{age}}</p>
+            <div id="canvas" v-on:mousemove="updateXY">{{x}},{{y}}</div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
